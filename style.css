@@ -42,7 +42,6 @@ a {
     user-select: none;
     cursor: pointer;
 }
-
 .col {
     display: flex;
     flex-direction: column;
@@ -96,7 +95,6 @@ section {
     width: 7rem;
 }
 .test-0-logo div {
-    text-transform: uppercase;
     font-size: 3rem;
     font-weight: 900;
     margin-left: 1rem;
@@ -119,7 +117,26 @@ section {
     background-color: var(--additional-color);
     border-radius: 5px;
 }
-
+.nav-menu-absolute {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 90vw;
+    transform: translate(-50%, 50%);
+    padding: 0.5rem 1rem;
+    background-color: var(--bg-second-color);
+    border-radius: 0.6rem;
+    z-index: 200;
+}
+.nav-menu-absolute a {
+    color: var(--additional-color);
+    font-size: 2rem;
+    line-height: 1.6;
+}
+.flex {
+    display: flex;
+}
 .nav-bar a {
     font-size: 1.7rem;
     font-weight: 600;
@@ -239,6 +256,18 @@ section {
     border-radius: 2rem;
 }
 
+/* Three Section */
+.map {
+    display: flex;
+    align-items: center;
+}
+#YMapsID {
+    width: 80%;
+    height: 60vh;
+    border: 1px solid var(--main-color);
+}
+
+/* Footer */
 .footer {
     display: flex;
     align-items: center;
@@ -265,7 +294,7 @@ section {
 }
 
 
-/* Загрузочный экран */
+/* Loading window */
 #loading-window {
     position: fixed;
     z-index: 1000;
@@ -346,5 +375,8 @@ section {
     .home {
         flex-direction: column;
         justify-content: center;
+    }
+    .home img {
+        display: none;
     }
 }

@@ -17,10 +17,19 @@
     </div>
     <!-- --- -->
 
+    <!-- Навигационное Меню -->
+    <div class="nav-menu-absolute col" id="nav-menu-absolute">
+        <a href="#home">Главная</a>
+        <a href="#sale" class="test-0-nav-1">Акции</a>
+        <a href="#find" class="test-0-nav-2">Поиск</a>
+        <a href="#" class="test-0-nav-3">Регистрация аренды</a>
+        <a href="#" class="test-0-nav-4">Личный кабинет</a>
+    </div>
+
     <!-- Шапка -->
     <header class="header">
-        <a class="test-0-logo" href="/">
-            <img src="logo.png" alt="logo">
+        <a class="test-0-logo" href="#">
+            <img src="images/logo.png" alt="logo">
             <div>Bike Sharing</div>
         </a>
 
@@ -33,10 +42,10 @@
 
         <div class="nav-bar">
             <a href="#home" class="active">Главная</a>
-            <a href="#sale">Акции</a>
-            <a href="#find">Поиск</a>
-            <a href="#registerRent">Регистрация аренды</a>
-            <a href="#login">Личный кабинет</a>
+            <a href="#sale" class="test-0-nav-1">Акции</a>
+            <a href="#find" class="test-0-nav-2">Поиск</a>
+            <a href="#" class="test-0-nav-3">Регистрация аренды</a>
+            <a href="#" class="test-0-nav-4">Личный кабинет</a>
         </div>
     </header>
     
@@ -56,7 +65,7 @@
                 </a>
             </div>
         </div>
-        <img id="bike" src="aboba.png" alt="product">
+        <img id="bike" src="images/aboba.png" alt="product">
     </section>
 
     <!-- Второй сектор -->
@@ -64,31 +73,36 @@
         <h2 class="heading">Акции</h2>
         <div class="sale-container">
             <div class="sale-box">
-                <h3>Приведи друга</h3>
-                <p>Получите 1 час бесплатного проката, за каждого нового привиденного пользователя.</p>
-                <a href="#" class="btn">Узнать больше</a>
+                <h3 class="test-0-an">Приведи друга</h3>
+                <p class="test-0-ad">Получите 1 час бесплатного проката, за каждого нового привиденного пользователя.</p>
+                <a href="#" class="btn test-0-abm">Узнать больше</a>
             </div>
 
             <div class="sale-box">
-                <h3>Самокатные туры</h3>
-                <p>Проведите полдня/целый день на самокате, исследуя достопримечательности города.</p>
-                <a href="#" class="btn">Узнать больше</a>
+                <h3 class="test-0-an">Самокатные туры</h3>
+                <p class="test-0-ad">Проведите полдня/целый день на самокате, исследуя достопримечательности города.</p>
+                <a href="#" class="btn test-0-abm">Узнать больше</a>
             </div>
 
             <div class="sale-box">
-                <h3>Неделя самоката</h3>
-                <p>Арендуйте самокат на всю неделю со значительной скидкой, по сравнению с обычной арендой.</p>
-                <a href="#" class="btn">Узнать больше</a>
+                <h3 class="test-0-an">Неделя самоката</h3>
+                <p class="test-0-ad">Арендуйте самокат на всю неделю со значительной скидкой, по сравнению с обычной арендой.</p>
+                <a href="#" class="btn test-0-abm">Узнать больше</a>
             </div>
 
             <div class="sale-box">
-                <h3>Подписка на закрытые акции</h3>
+                <h3 class="test-0-an">Подписка на закрытые акции</h3>
                 <div class="col">
-                    <input type="text" required placeholder="Your Email...">
-                    <a href="#" class="btn">Подписаться</a>
+                    <input class="test-0-sie" type="text" required placeholder="Your Email...">
+                    <a href="#" class="btn test-0-sbs">Подписаться</a>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="map col" id="find">
+        <div class="heading">Позиции самокатов</div>
+        <div id="YMapsID"></div>
     </section>
 
     <footer class="footer">
@@ -129,6 +143,8 @@
         </div>
     </footer>
 
+    <!-- google map js -->
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <!-- main js -->
     <script src="main.js"></script>
 </body>
